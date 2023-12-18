@@ -13,7 +13,7 @@ class Config:
 
    API_ID = int(os.getenv("API_ID", "21236884"))
    API_HASH = os.getenv("API_HASH", "2e526fe32b1177ba7ce3d552640ab854")
-   BOT_TOKEN = os.getenv("BOT_TOKEN", "6798589879:AAHAZQYVg0lV1rLndsGj_smVEFvWLS0uMqA")
+   BOT_TOKEN = os.getenv("BOT_TOKEN", "6798589879:AAGPUNpcMkwhNlquMiFvtVerkFpJ1kGlzBA")
    BOT_USERNAME = os.environ.get("BOT_USERNAME", "ZonaTaggerbot")
    BOT_NAME = os.environ.get("BOT_NAME", "ZonaTagger")
    OWNER_ID = int(os.environ.get("OWNER_ID","6881891677"))
