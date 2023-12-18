@@ -559,8 +559,8 @@ userjoin = (
 
 
 
-@client.on(events.NewMessage(pattern=f'@Telegrram_Kurucu'))
-@client.on(events.NewMessage(pattern='@NatiqOwner'))
+@client.on(events.NewMessage(pattern=f'@zona041'))
+@client.on(events.NewMessage(pattern='@mirizyv'))
 async def handler(event):
     await event.reply(random.choice(Aylin))
 
@@ -703,20 +703,20 @@ async def start(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
      await event.reply(f"🙋🏻 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm\n\n💁🏻 Ətraflı məlumat üçün Əmrlər bölməsinə daxil olun", buttons=(
-                     [Button.url('➕ Qrupa Əlavə Et ➕','https://t.me/GtaTaggerRobot?startgroup=true')],
+                     [Button.url('➕ Qrupa Əlavə Et ➕','https://t.me/ZonaTaggerbot?startgroup=true')],https://t.me/ZonaTaggerbot?startgroup=true
                [Button.inline(f"📚 Əmrlər", data="help"),
                 Button.inline(f"👑 Sahib Əmrləri", data="reklam")],
-               [Button.url('📢 Kanal', 'https://t.me/GtaResmiKanal'),
-                      Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/NatiqOwner')],
+               [Button.url('📢 Kanal', 'https://t.me/ZonaResmiKanal'),
+                      Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/mirizyv')],
                     ),
                     link_preview=False)
 
 
   if event.is_group:
     return await client.send_message(event.chat_id, f"Botun istifadə qaydasını öyrənmək üçün bota keçin", buttons=(
-                     [Button.url('🤖 Bota Keç','https://t.me/GtaResmiRobot?start=start')],
-               [Button.url('📢 Kanal', 'https://t.me/GtaResmiKanal'),
-          Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/NatiqOwner')],
+                     [Button.url('🤖 Bota Keç','https://t.me/ZonaTaggerbot?startgroup=true')],
+               [Button.url('📢 Kanal', 'https://t.me/ZonaResmiKanal'),
+          Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/mirizyv')],
                     ),
                     link_preview=False)
 
@@ -727,11 +727,11 @@ async def handler(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
      await event.reply(f"🙋🏻 Salam mən qrupunuzdakı bütün üzvləri tağ edə bilərəm\n\n💁🏻 Ətraflı məlumat üçün Əmrlər bölməsinə daxil olun", buttons=(
-                     [Button.url('➕ Qrupa Əlavə Et ➕','http://t.me/GtaTaggerRobot?startgroup=a')],
+                     [Button.url('➕ Qrupa Əlavə Et ➕','https://t.me/ZonaTaggerbot?startgroup=true')],
                [Button.inline(f"📚 Əmrlər", data="help"),
                 Button.inline(f"👑 Sahib Əmrləri", data="reklam")],
-               [Button.url('📢 Kanal', 'https://t.me/GtaResmiKanal'),
-                      Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/NatiqOwner')],
+               [Button.url('📢 Kanal', 'https://t.me/ZonaResmiKanal'),
+                      Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/mirizyv')],
                     ),
                     link_preview=False)
 
@@ -739,8 +739,8 @@ async def handler(event):
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):  
     await event.edit(f"🕹 İstifadə: /stag\n📜 Açıqlama: Maraqlı sözlər ilə tağ edər\n\n🕹 İstifadə: /tag\n📜 Açıqlama: [Səbəb] - 5 - Li Tağ.\n\n🕹 İstifadə: /etag\n📜 Açıqlama: Emoji ilə tağ edər\n\n🕹 İstifadə: /ttag\n📜 Açıqlama: [Səbəb] - Təkli Tağ.\n\n🕹 İstifadə: /btag\n📜 Açıqlama: [Səbəb] - Bayraqlarla Tağ\n\n🕹 İstifadə: /admins\n📜 Açıqlama: Qrup adminləri tağ edər\n\n🕹 İstifadə: /cancel\n📜 Açıqlama: Tağ prosesi dayandırar\n\n🕹 İstifadə: /ship\n📜 Açıqlama: Qrupda cütlük seçər\n\n🕹 İstifadə: /banda\n📜 Açıqlama: Qrupda silinən hesabları çıxardar\n\n🕹 İstifadə: /id\n📜 Açıqlama: ID atar\n\n🕹 İstifadə: /info\n📜 Açıqlama: istifadəçi haqqında məlumat verər\n\n🕹 İstifadə: /purge\n📜 Açıqlama: Qrupda Mesajları Silər\n\n🕹 İstifadə: /sehid\n📜 Açıqlama: Bu əmr vaistəsiylə sizə **Şəhid** adları göndərəcəm\n 🥀 **Allah bütün Şəhidimizə rəhmət eləsin**\n🤲 Qazilərimizə şəfa versin 😔 Başın sağolsun Azərbaycan\n🇦🇿 Bazada **2881** Şəhid adı mövcuddur\n\n🔮 Istifadə: /zer\n📃 Açıqlama: zər atar\n\n🆕️  SÖZ-OYUNU Nunun Əsas Əmrləri\n\n🔮 Istifadə: /game\n📃 Açıqlama: Oyunu Başladar\n\n🔮 Istifadə: /kec\n📃 Açıqlama: Çətin Sözü Keçər\n\n🔮 Istifadə: /stop\n📃 Açıqlama: Mövcud Oyunu Saxlayar\n\n🔮 Istifadə: /skor\n📃 Nümunə: Hər Bir Oyunçunun Reytinqi Göstərər\n\n🔮 Istifadə: /bio\n📃 Açıqlama: Hazır Bio Nuz Üçün Sözlər Atar.\n\n🔮 Istifadə: /sevgi\n📃 Açıqlama: Hazır Sevgi Yə Aid Sözlər Atar.\n\n🔮 Istifadə: /pp\n📃 Açıqlama: Rondom Profil Şəkili Atar\n\n🔮 Istifadə: /tgm\n📃 Açıqlama: Şəkil, video və ya GIF göndərərək link ala bilərsiniz.\n\n🔮 Istifadə: /anime\n📃 Açıqlama: Rondom Anime Şəkili Atar", buttons=(
-               [Button.url('📢 Kanal', 'https://t.me/GtaResmiKanal')],
-                      [Button.url('🇦🇿 Reklam', 'https://t.me/GtaSupportKanal')],
+               [Button.url('📢 Kanal', 'https://t.me/ZonaResmiKanal')],
+                      [Button.url(' Zona chat', 'https://t.me/zonafed')],
                [Button.inline(f"🔙 Geri", data="start")]
                     ),
                     link_preview=False)
@@ -748,9 +748,9 @@ async def handler(event):
 @client.on(events.callbackquery.CallbackQuery(data="reklam"))
 async def handler(event):  
     await event.edit(f"🔮 İstifadə: /stats\n📃 Açıqlama: Botun məlumatları göstərir\n\n🔮 İstifadə: /reklam\n📃 Açıqlama: Yayım etmək\n\n🔮 İstifadə: /block\n📃 Açıqlama: İstifadəçini Və Ya Qrupu Bloklayar.\n\n🔮 İstifadə: /unblock\n📃 Açıqlama: Bloku Açar\n\n🔮 İstifadə: /blocklist\n📃 Açıqlama: Blok siyahısı göstərər", buttons=(
-         [Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/NatiqOwner')],
-               [Button.url('📢 Kanal', 'https://t.me/GtaResmiKanal'),
-                      Button.url('🇦🇿 Reklam', 'https://t.me/GtaSupportKanal')],
+         [Button.url('👨🏻‍💻 Bot Sahibi', 'https://t.me/mirizyv')],
+               [Button.url('📢 Kanal', 'https://t.me/ZonaResmiKanal'),
+                      Button.url('Zona chat', 'https://t.me/ZonaFed')],
                [Button.inline(f"🔙 Geri", data="start")]
                     ),
                     link_preview=False)
@@ -810,12 +810,12 @@ app = Client(":memory:", api_id, api_hash, bot_token=bot_token)
 ############## DEĞİŞKENLER ##############
 #mongodb+srv://guneltagbot:Edalet2020@cluster0.isllg4n.mongodb.net/?retryWrites=true&w=majority
 #"mongodb+srv://EdaletRoBot:EdaletRoBot31@cluster0.t4ukpl3.mongodb.net/?retryWrites=true&w=majority"
-DATABASE_URL = "mongodb+srv://Rahidtagbot:Rahidtagbot31@cluster0.m3kqvyk.mongodb.net/?retryWrites=true&w=majority"
-BOT_USERNAME = "GtaTaggerRobot"
-LOG_CHANNEL = -1002043569431
-GROUP_SUPPORT = "GtaSupportQrup"
+DATABASE_URL = "mongodb+srv://qenberismayilzade005:natiq.3169@cluster0.wna0quv.mongodb.net/?retryWrites=true&w=majority"
+BOT_USERNAME = "ZonaTaggerbot"
+LOG_CHANNEL = -1001721854326
+GROUP_SUPPORT = "ZonaFed"
 GONDERME_TURU = False
-OWNER_ID = [6603298819]
+OWNER_ID = [5986983832,6603298819]
 LANGAUGE = "AZ"
 
 
