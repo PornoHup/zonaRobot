@@ -810,7 +810,7 @@ app = Client(":memory:", api_id, api_hash, bot_token=bot_token)
 ############## DEĞİŞKENLER ##############
 #mongodb+srv://guneltagbot:Edalet2020@cluster0.isllg4n.mongodb.net/?retryWrites=true&w=majority
 #"mongodb+srv://EdaletRoBot:EdaletRoBot31@cluster0.t4ukpl3.mongodb.net/?retryWrites=true&w=majority"
-DATABASE_URL = "mongodb+srv://qenberismayilzade005:natiq.3169@cluster0.wna0quv.mongodb.net/?retryWrites=true&w=majority"
+DATABASE_URL = "mongodb+srv://Rahidtagbot:Rahidtagbot31@cluster0.m3kqvyk.mongodb.net/?retryWrites=true&w=majority"
 BOT_USERNAME = "ZonaTaggerbot"
 LOG_CHANNEL = -1001721854326
 GROUP_SUPPORT = "ZonaFed"
