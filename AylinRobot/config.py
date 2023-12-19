@@ -16,7 +16,7 @@ class Config:
    BOT_TOKEN = os.getenv("BOT_TOKEN", "6798589879:AAGPUNpcMkwhNlquMiFvtVerkFpJ1kGlzBA")
    BOT_USERNAME = os.environ.get("BOT_USERNAME", "ZonaTaggerbot")
    BOT_NAME = os.environ.get("BOT_NAME", "ZonaTagger")
-   OWNER_ID = int(os.environ.get("OWNER_ID","6881891677"))
+   OWNER_ID = int(os.environ.get("OWNER_ID", "6881891677"))
    OWNER_NAME = os.environ.get("OWNER_NAME", "mirizyv") 
    BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
    MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb+srv://qenberismayilzade005:natiq.3169@cluster0.wna0quv.mongodb.net/?retryWrites=true&w=majority")
