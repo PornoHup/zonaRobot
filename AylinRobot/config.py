@@ -24,7 +24,7 @@ class Config:
    PLAYLIST_NAME = os.environ.get("PLAYLIST_NAME", "nezrinlogo")
    PLAYLIST_ID = int(os.environ.get("PLAYLIST_ID", "-1002140637128"))
    BAN_GROUP = int(os.environ.get("BAN_GROUP", "-1002115471818"))
-   HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", "c7c2f4ed-e8c3-46e8-ae9a-bfd0ed6b1a69")
+   HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", "56ae7152-5102-4d4b-8ab7-218810c69336")
    ALIVE_NAME = os.environ.get("ALIVE_NAME", "riyad")
    CHANNEL = os.environ.get("CHANNEL", "nezrinlogo")
    SUPPORT = os.environ.get("SUPPORT", "nezrinlogo")
